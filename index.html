@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse Leave Popup - Tutorial Mudah</title>
+        <link rel="shortcut icon" href="img/bg.avif">
+        <link rel="stylesheet" href="style.css">
+        <body>
+            <div class="container">
+
+            </div>
+
+            <div id="modelBox">
+                <img src="img/joker.png" width="100%">
+                <div class="div offer-text">
+                    <h2>HAYOOO DI SUBSCRIBE!!!</h2>
+                    <small>Untuk Dapat Banyak Keuntungan</small>
+                    <p>Untuk mendapatkan langganan dari konten-konten saya, 
+                        silahkan daftar diri anda menggunakan email anda!!!</p>
+                        <form>
+                            <input type="email" placeholder="Email Address">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                </div>
+                <img src="img/close.png" class="close-icon" onclick="closeModel()">
+            </div>
+
+            <script>
+                
+               let modelBox = document.getElementById("modelBox");
+
+               document.onmouseleave = function(){
+                    modelBox.style.display = "block";
+               }    
+               
+               function closeModel(){
+                modelBox.style.display = "none";  
+               }
+            </script>
+        </body>
+    </head>
+</html>
